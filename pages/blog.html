@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>blog</title>
+        <link rel="icon" href="../assets/IMG-20240224-WA0005.jpg" type="image/icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/blog.css">
+        <script src="https://kit.fontawesome.com/8e73c86621.js" crossorigin="anonymous"></script>
+           
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <div class="profile">
+                    <img src="../assets/IMG-20240224-WA0005.jpg" alt="" style="width: 60px; height: 60px;">
+                </div>
+                <a href="#0" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <a href="../index.html" class="link">Work</a>
+                <a href="contact.html" class="link">Contact</a>
+                <a href="about.html" class="link">About</a>
+                <a href="#" style="color: #ffff00;"  class="link">Blog</a>
+                <a href="signin.html" class="link">Sign in</a>
+            </div>
+                </div>
+        </header>
+        <div class="container">
+            <div class="text">
+                <h1>Be <span style="color: #ffff00;">up</span> to <span style="color: #ffff00;">date</span></h1>
+            </div>
+            <div class="input">
+                <i class="fas fa-search"></i>
+                <input type="text" id="name" name="name" placeholder="       Search..."> 
+                <button class="btn search">search</button>
+            </div>
+                <h1 style="color: #ffff00;">Article</h1>
+                <div class="container-articles"> 
+                    <!-- <div class="card-article"> -->
+                        <!-- <a href="/pages/article.html">
+                            <img src="https://cdn.mos.cms.futurecdn.net/ibsU7dpc5pJ2Su8ZTbPNRV.jpg" alt="">
+                        </a>
+                        <h4>Web development</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur ao ratione iure dicta unt, eius eum ipsum. I heard there was a secret chord that</p>
+                    </div>
+                    <div class="card-article">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRrYMIanTdKhGTSkzj7W9SONiXyZxX8ESHzSw&usqp=CAU" alt="">
+                        <h4>Trump towers</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum it officiis tempore quod rem ut fuga consequatur nostrum.</p>
+                    </div>
+                    <div class="card-article">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfZTeEQnRBB92fm-o_CAS7729SXYvAmq2ltw&usqp=CAU" alt="">
+                        <h4>Messi Vs Ronaldo</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, quibusdam optio. Aliquid suscipit laboriosam expedita sit modi voluptate quam a? Natiam commodi inventore optio.</p>
+                    </div>
+                    <div class="card-article">
+                        <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/210768979.jpg?k=8c5a446976bf74a068d77c5e1dcf37158b9625883dd99ff46175fa6d263836e2&o=" alt="">
+                        <h4>Musee de Louvre</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe voluptate sequi tempore perferendis, aliquid obcaecati vero nam ab sed nostrum, iusto unde laborum maiores. Distinctio, debitis.</p>
+                    </div>
+                    <div class="circle"><i class="fas fa-plus-circle" style="color: black; cursor: pointer;"></i></div>
+                    </div> -->
+                </div>
+        </div>
+        <div class="footer">
+            <div class="icons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="contacts">
+                ishimweariellewiseshaddaimail.com || Tel: 0784395700 /0724322481
+            </div>
+            <div class="copy">
+                &#169; 2020 Arielle designs. Created by Arielle
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+            apiKey: "AIzaSyCWVjdBDF_h7dJosqUvL2Tdw8Ak9V8ppzs",
+            authDomain: "my-brand-a3ccc.firebaseapp.com",
+            databaseURL: "https://my-brand-a3ccc.firebaseio.com",
+            projectId: "my-brand-a3ccc",
+            storageBucket: "my-brand-a3ccc.appspot.com",
+            messagingSenderId: "97264772827",
+            appId: "1:97264772827:web:1fbcf81a9ce96762dbcefe",
+            measurementId: "G-DEXY2PTGCZ"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({timestampsInSnapshots: true});
+        </script> 
+        <script src="../js/blog.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

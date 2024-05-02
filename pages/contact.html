@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="../assets/IMG-20240224-WA0005.jpg" type="image/icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="https://kit.fontawesome.com/8e73c86621.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="profile">
+                <img src="../assets/IMG-20240224-WA0005.jpg" alt="" style="width: 60px; height: 60px;">
+            </div>
+            <!-- <div class="burger"> -->
+                <a href="#0" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            <!-- </div> -->
+            </div>
+            <div class="nav-bar">
+                <a href="../index.html" class="link">Work</a>
+                <a href="#" style="color: #ffff00;"  class="link">Contact</a>
+                <a href="about.html" class="link">About</a>
+                <a href="blog.html" class="link">Blog</a>
+                <a href="signin.html" class="link">Sign in</a>
+            </div>
+        </div>
+    </header>
+    <h1>Get in touch</h1>
+    <div class="container-form">
+        <div id="container">
+            <form action="" id="form-contact">
+                <label for="forname">
+                    <i class="fas fa-user"></i>
+                    Name
+                </label>
+                <input type="text" id="name" name="name" placeholder=""><br>
+                <span class="name-error"></span>
+                <label for="foremail">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </label>
+                <div>
+                    <input type="text" id="email" name="email" placeholder=""> <br>
+                    <span class="email-error"></span>
+                </div>
+                <div>
+                    <textarea id="message" placeholder="Enter message" style="color: white;"></textarea><br>
+                    <span class="text-error"></span>
+                </div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div>
+        <div class="contacts">
+            ishimweariellewiseshaddai@gmail.com || Tel: 0784395700/0724233481
+        </div>
+        <div class="copy">
+            &#169; 2024 Arielle designs. Created by Arielle
+        </div>
+    </div>
+</div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script> 
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+        apiKey: "AIzaSyCWVjdBDF_h7dJosqUvL2Tdw8Ak9V8ppzs",
+        authDomain: "my-brand-a3ccc.firebaseapp.com",
+        databaseURL: "https://my-brand-a3ccc.firebaseio.com",
+        projectId: "my-brand-a3ccc",
+        storageBucket: "my-brand-a3ccc.appspot.com",
+        messagingSenderId: "97264772827",
+        appId: "1:97264772827:web:1fbcf81a9ce96762dbcefe",
+        measurementId: "G-DEXY2PTGCZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true});
+    </script> 
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

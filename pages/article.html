@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="icon" href="../assets/IMG-20240224-WA0005.jpg" type="image/icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/article.css">
+    <script src="https://kit.fontawesome.com/8e73c86621.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="profile">
+                <img src="../assets/IMG-20240224-WA0005.jpg" alt="" style="width: 60px; height: 60px;">
+            </div>
+            <a href="#0" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <a href="../index.html" class="link">Work</a>
+            <a href="contact.html" class="link">Contact</a>
+            <a href="about.html" class="link">About</a>
+            <a href="blog.html"   class="link">Blog</a>
+            <a href="signin.html" class="link">Sign in</a>
+        </div>
+            </div>
+    </header>
+    <div class="container">
+        <div class="card-article">
+            <img class="image" src="" alt="">
+            <h4 class="title"></h4>
+            <p class="body"></p>
+        </div>
+        <!-- <h1 class="article-text">More Articles</h1>
+        <div class="card">
+            <div class="card-article small">
+                <img src="https://cdn.mos.cms.futurecdn.net/ibsU7dpc5pJ2Su8ZTbPNRV.jpg" alt="">
+                <h4>Web development</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur ao ratione iure dicta unt, eius eum ipsum. I heard there was a secret chord that</p>
+            </div>
+            <div class="card-article small">
+                <img src="https://cdn.mos.cms.futurecdn.net/ibsU7dpc5pJ2Su8ZTbPNRV.jpg" alt="">
+                <h4>Web development</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur ao ratione iure dicta unt, eius eum ipsum. I heard there was a secret chord that</p>
+            </div>
+        </div> -->
+        <h1 style="color: #ffff00;">Comment section</h1>
+        <div class="comment-section">
+            <!-- <h1>Aubrey Manzi</h1>
+            <div class="dropdown">
+                <i class="fas fa-ellipsis-h"></i>
+                <div class="dropdown-content">
+                    <a href="confirm.html">Delete</a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore doloremque esse ratione, soluta molestias ullam optio aut aspernatur iusto, libero asperiores neque quae sapiente maxime corporis, accusamus totam deserunt aliquam nulla autem illum rerum? Fuga natus similique maxime pariatur.</p> -->
+        </div>
+        <h1>Leave a comment</h1>
+
+        <div>
+            <form action="" class="form-container" id="form">
+                <input id="text" type="text" placeholder="Enter your name" name="name">
+                <textarea id="textarea" name="message" cols="30" rows="10" placeholder="Enter commenct" style="color: white;"></textarea>
+                <button class="btn comments">Comment</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div>
+        <div class="contacts">
+            ishimweariellewiseshaddai@gmail.com || Tel: 0784395700 /0724233481
+        </div>
+        <div class="copy">
+            &#169; 2024 Arielle designs. Created by Arielle
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCWVjdBDF_h7dJosqUvL2Tdw8Ak9V8ppzs",
+          authDomain: "my-brand-a3ccc.firebaseapp.com",
+          databaseURL: "https://my-brand-a3ccc.firebaseio.com",
+          projectId: "my-brand-a3ccc",
+          storageBucket: "my-brand-a3ccc.appspot.com",
+          messagingSenderId: "97264772827",
+          appId: "1:97264772827:web:1fbcf81a9ce96762dbcefe",
+          measurementId: "G-DEXY2PTGCZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const str = firebase.storage();
+        const db = firebase.firestore();
+
+        db.settings({timestampsInSnapshots: true});
+    </script> 
+    <script src="../js/article.js"></script>   
+    <script src="../js/main.js"></script>     
+</body>
+</html>
